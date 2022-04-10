@@ -2,5 +2,10 @@
   "extends": [
     "config:base"
   ],
-  "reviewers": ["@mytysoldier"]
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
 }
